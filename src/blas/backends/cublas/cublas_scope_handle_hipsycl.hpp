@@ -20,6 +20,8 @@
 #define CUBLAS_SCOPED_HANDLE_HIPSYCL_HPP
 #if __has_include(<sycl/sycl.hpp>)
 #include <sycl/sycl.hpp>
+#elif __has_include(<SYCL/sycl.hpp>)
+#include <SYCL/sycl.hpp>
 #else
 #include <CL/sycl.hpp>
 #endif
